@@ -1,0 +1,19 @@
+CupertinoPicker(
+                backgroundColor: Colors.lightBlue,
+                itemExtent: 32,
+                onSelectedItemChanged: (selectedindex) {
+                  print(selectedindex);
+                },
+                children: getDropdownItems(), //
+
+              ),
+              
+              
+    create this on uper side of @overwride          
+  List<Widget> getPickeritems() {
+    List<Text> pickerItems = [];
+    for (String currency in currenciesList) {
+      pickerItems.add(Text(currency));
+    }
+    return getPickeritems();
+  }
